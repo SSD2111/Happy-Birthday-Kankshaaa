@@ -21,9 +21,7 @@ for (var i = 0; i < pages.length; i++) {
 }
 
 document.addEventListener('click',function(){
-   player.onclick = function(){
     song1.play(); 
-   } 
 })
 
 document.addEventListener('DOMContentLoaded', function () {
