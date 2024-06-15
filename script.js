@@ -21,7 +21,10 @@ for (var i = 0; i < pages.length; i++) {
 }
 
 document.addEventListener('click',function(){
-    song1.play(); 
+    songList[playerCount].play();
+    songList[playerCount].onended = function (){
+        playerCount++
+    }
 })
 
 document.addEventListener('DOMContentLoaded', function () {
