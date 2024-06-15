@@ -21,10 +21,12 @@ for (var i = 0; i < pages.length; i++) {
     }
 }
 
-document.addEventListener('click',function(){
+document.addEventListener('DOMContentLoaded',function(){
    player.onclick = function(){
-    songList[playerCount].play(); 
-    playerCount++;
+    song1.play(); 
+    songList[playerCount].onended = function () {
+        playerCount++;
+    }
    } 
 })
 
