@@ -20,12 +20,9 @@ for (var i = 0; i < pages.length; i++) {
     }
 }
 
-document.addEventListener('DOMContentLoaded',function(){
+document.addEventListener('click',function(){
    player.onclick = function(){
     song1.play(); 
-    songList[playerCount].onended = function () {
-        playerCount++;
-    }
    } 
 })
 
