@@ -1,8 +1,18 @@
 var pages = document.getElementsByClassName('page');
+var player = document.querySelector('body');
 var forward = new Audio('./sounds/forward.wav')
 var backward = new Audio('./sounds/backward.wav')
-var player = document.querySelector('body');
-var song1 = new Audio('./songs/birthday-song.wav')
+
+var song1 = new Audio('./songs/birthday-song1.wav')
+var song2 = new Audio('./songs/birthday-song2.wav')
+var song4 = new Audio('./songs/birthday-song3.wav')
+var song5 = new Audio('./songs/birthday-song4.wav')
+var song6 = new Audio('./songs/birthday-song5.wav')
+var song3 = new Audio('./songs/birthday-song6.wav')
+
+var songList = [song1, song2, song3, song4, song5, song6]
+
+var playerCount = 0;
 
 for (var i = 0; i < pages.length; i++) {
     var page = pages[i];
@@ -11,13 +21,14 @@ for (var i = 0; i < pages.length; i++) {
     }
 }
 
-document.addEventListener('DOMContentLoaded',function(){
+document.addEventListener('click',function(){
    player.onclick = function(){
-    song1.play();
+    songList[playerCount].play(); 
+    playerCount++;
    } 
 })
 
-document.addEventListener('DOMContentLoaded', function () {   
+document.addEventListener('DOMContentLoaded', function () {
     for (var i = 0; i < pages.length; i++) {
         // var page = pages[i];
         pages[i].pageNum = i + 1;
@@ -34,5 +45,5 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     }
-});
+})
 
