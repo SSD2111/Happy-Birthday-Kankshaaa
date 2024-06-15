@@ -11,9 +11,12 @@ for (var i = 0; i < pages.length; i++) {
     }
 }
 
+var player = 0;
+if(player === 0){
+    song1.play();
+}
 
-document.addEventListener('DOMContentLoaded', function () {
-    song1.play()    
+document.addEventListener('DOMContentLoaded', function () {   
     for (var i = 0; i < pages.length; i++) {
         // var page = pages[i];
         pages[i].pageNum = i + 1;
