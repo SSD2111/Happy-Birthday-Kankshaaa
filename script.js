@@ -1,7 +1,7 @@
 var pages = document.getElementsByClassName('page');
 var forward = new Audio('./sounds/forward.wav')
 var backward = new Audio('./sounds/backward.wav')
-
+var player = document.querySelector('body');
 var song1 = new Audio('./songs/birthday-song.mp3')
 
 for (var i = 0; i < pages.length; i++) {
@@ -11,8 +11,10 @@ for (var i = 0; i < pages.length; i++) {
     }
 }
 
-document.addEventListener('click',function(){
+document.addEventListener('DOMContentLoaded',function(){
+   player.onclick = function(){
     song1.play();
+   } 
 })
 
 document.addEventListener('DOMContentLoaded', function () {   
@@ -32,5 +34,5 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     }
-})
+});
 
