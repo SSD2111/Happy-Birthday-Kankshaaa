@@ -2,7 +2,7 @@ var pages = document.getElementsByClassName('page');
 var forward = new Audio('./sounds/forward.wav')
 var backward = new Audio('./sounds/backward.wav')
 
-var song1 = new Audio('./songs/birthday-song.mp3')
+var song1 = new Audio('./songs/birthday-song')
 
 for (var i = 0; i < pages.length; i++) {
     var page = pages[i];
