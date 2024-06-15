@@ -5,12 +5,11 @@ var backward = new Audio('./sounds/backward.wav')
 
 var song1 = new Audio('./songs/birthday-song1.wav')
 var song2 = new Audio('./songs/birthday-song2.wav')
-var song4 = new Audio('./songs/birthday-song3.wav')
-var song5 = new Audio('./songs/birthday-song4.wav')
-var song6 = new Audio('./songs/birthday-song5.wav')
-var song3 = new Audio('./songs/birthday-song6.wav')
+var song3 = new Audio('./songs/birthday-song3.wav')
+var song4 = new Audio('./songs/birthday-song4.wav')
+var song5 = new Audio('./songs/birthday-song5.wav')
 
-var songList = [song1, song2, song3, song4, song5, song6]
+var songList = [song1, song2, song3, song4, song5]
 
 var playerCount = 0;
 
