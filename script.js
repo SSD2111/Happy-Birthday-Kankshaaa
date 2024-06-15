@@ -23,7 +23,11 @@ for (var i = 0; i < pages.length; i++) {
 document.addEventListener('click',function(){
     songList[playerCount].play();
     songList[playerCount].onended = function (){
-        playerCount++
+        if(playerCount === 5){
+            playerCount = 0; 
+        }else{
+            playerCount++
+        }
     }
 })
 
