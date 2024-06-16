@@ -21,13 +21,12 @@ for (var i = 0; i < pages.length; i++) {
 }
 
 document.addEventListener('click',function(){
+    if(playerCount === songList.length){
+        playerCount = 0;
+    }
     songList[playerCount].play();
     songList[playerCount].onended = function (){
-        if(playerCount === 5){
-            playerCount = 0; 
-        }else{
-            playerCount++
-        }
+        playerCount++;
     }
 })
 
